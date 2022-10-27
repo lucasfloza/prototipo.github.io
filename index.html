@@ -105,7 +105,7 @@
 
   <div class="row gx-0">
     <div class="d-flex justify-content-center align-items-center p-5" style="height: 500px;">
-      <h1 class="text-center fs-md-3 fs-1 font-monospace" id="title-main" >Marketing + High Technology =  Sale. </h1>
+      <h1 class="text-center font-monospace fs-1" id="title-main">Marketing + High Technology =  Sale. </h1>
     </div>
   </div>
 
@@ -640,12 +640,12 @@
 
         <div class="col-md-6 form-div">
           <label for="nome-input">Nome</label>
-          <input type="text" name="" id="nome-input" class="form-control">
+          <input type="text" name="" id="nome-input" class="form-control" required>
         </div>
 
         <div class="col-md-6 form-div">
           <label for="email-input">Email</label>
-          <input type="email" name="" id="email-input" class="form-control">
+          <input type="email" name="" id="email-input" class="form-control" required>
         </div>
 
       </div>
@@ -654,7 +654,7 @@
         
         <div class="col-6 form-div">
           <label for="assunto-input">Assunto</label>
-          <input type="text" id="assunto-input" class="form-control">
+          <input type="text" id="assunto-input" class="form-control" required>
         </div>
         
       </div>
@@ -663,7 +663,11 @@
 
         <div class="col-9 form-div">
           <label for="recado">Recado</label>
-          <textarea name="" id="" class="form-control" style="resize: none; height:200px ;"></textarea>
+          <textarea name="" id="" class="form-control" style="resize: none; height:200px ;" required></textarea>
+        </div>
+        
+        <div class="row d-flex justify-content-center mt-5 mb-5">
+            <button class="botao-preco btn btn-lg col-md-4" type="submit">Enviar</button>
         </div>
         
       </div>

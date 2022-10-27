@@ -74,14 +74,11 @@
   }
 
   .botao-preco:hover{
-    animation: botaoBuy 2s infinite;
+    animation: botaoBuy 1.5s infinite;
     font-weight:550;
     color: black;
   }
 
-  .form-control{
-    padding-top: 0px !important;
-  }
 
   label{
     background-color: white;
@@ -95,9 +92,7 @@
   .form-div:hover  label{
     transform: translate(7px,12px) scale(.9);
   }
-  .form-div:hover  .form-control{
-    padding-top: 5px !important;
-  }
+
 
 
   @keyframes pisca {
@@ -130,33 +125,6 @@
 
  }
 
-
-  /* @keyframes botaoBuy {
-    0% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 0%,rgba(218, 105, 128, 0.5) 100%)}
-    10% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 10%,rgba(218, 105, 128, 0.5) 90%)}
-    20% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 20%,rgba(218, 105, 128, 0.5) 80%)}
-    30% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 30%,rgba(218, 105, 128, 0.5) 70%)}
-    40% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 40%,rgba(218, 105, 128, 0.5) 60%)}
-    50% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 60%,rgba(218, 105, 128, 0.5) 40%)}
-    60% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 70%,rgba(218, 105, 128, 0.5) 30%)}
-    70% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 80%,rgba(218, 105, 128, 0.5) 20%)}
-    80% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 90%,rgba(218, 105, 128, 0.5) 10%)}
-    90% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 100%,rgba(218, 105, 128, 0.5) 0%)}
-    100% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 0%,rgba(218, 105, 128, 0.5) 100%)}
- } */
-
-  /* @keyframes botaoBuy {
-     0% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 0%,rgba(218, 105, 128, 0.5) 100%)}
-     14.3%{background: linear-gradient(30deg, rgba(63,94,251,0.6) 0%,rgba(218, 105, 128, 0.4) 100%)}
-     28.6%{background: linear-gradient(30deg, rgba(63,94,251,0.6) 0%,rgba(218, 105, 128, 0.4) 100%)}
-     42.9%{background: linear-gradient(30deg, rgba(63,94,251,0.5) 0%,rgba(218, 105, 128, 0.3) 100%)}
-     57.2%{background: linear-gradient(30deg, rgba(63,94,251,0.5) 0%,rgba(218, 105, 128, 0.3) 100%)}
-    71.5% {background: linear-gradient(30deg, rgba(63,94,251,0.6) 0%,rgba(218, 105, 128, 0.4) 100%)}
-    85.8% {background: linear-gradient(30deg, rgba(63,94,251,0.6) 0%,rgba(218, 105, 128, 0.4) 100%)}
-    100% {background: linear-gradient(30deg, rgba(63,94,251,0.7) 0%,rgba(218, 105, 128, 0.5) 100%)}
-  } */
-   
-
   @keyframes hotColor {
 
     0% {background-image: linear-gradient(to right, rgb(196, 28, 28), rgb(146, 39, 39), rgb(196, 28, 28),rgb(146, 39, 39));}
@@ -175,4 +143,9 @@
     0%{opacity: 0}
     50%{opacity: 0.5}
     100%{opacity: 1}
+  }
+
+  @media (max-width: 576px) {
+
+    #title-main{font-size: 70px !important;}
   }
