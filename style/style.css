@@ -85,6 +85,7 @@
     padding: 0 5px;
     color: rgb(77, 74, 74);
     transform: translate(7px,30px);
+  
     transition: transform .25s ease-in-out;
     transform-origin: 0 100%;
 
@@ -93,7 +94,22 @@
     transform: translate(7px,12px) scale(.9);
   }
 
+  #contato #smile{
+    margin-left: 10px;
+   display: inline-block;
+    
+    animation: smileRotate 4s infinite;
 
+  }
+
+
+  @keyframes smileRotate{
+    0%{transform: rotate(0deg);}
+
+    50%{transform: rotate(450deg);}
+    70%{transform: rotate(450deg);}
+    100%{transform: rotate(720deg);}
+  }
 
   @keyframes pisca {
     0%,100%{opacity: 1;}
@@ -148,4 +164,13 @@
   @media (max-width: 576px) {
 
     #title-main{font-size: 70px !important; }
+  }
+
+  @media (max-width: 500px) {
+
+    #title-main{font-size: 60px !important; }
+  }
+  @media (max-width: 450px) {
+
+    #title-main{font-size: 55px !important; }
   }
