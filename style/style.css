@@ -74,12 +74,31 @@
   }
 
   .botao-preco:hover{
-
     animation: botaoBuy 2s infinite;
     font-weight:550;
     color: black;
+  }
+
+  .form-control{
+    padding-top: 0px !important;
+  }
+
+  label{
+    background-color: white;
+    padding: 0 5px;
+    color: rgb(77, 74, 74);
+    transform: translate(7px,30px);
+    transition: transform .25s ease-in-out;
+    transform-origin: 0 100%;
 
   }
+  .form-div:hover  label{
+    transform: translate(7px,12px) scale(.9);
+  }
+  .form-div:hover  .form-control{
+    padding-top: 5px !important;
+  }
+
 
   @keyframes pisca {
     0%,100%{opacity: 1;}
