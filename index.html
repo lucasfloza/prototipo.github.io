@@ -5,44 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <style>
-      #title-main::after{
-
-        content: '|';
-        margin-left: 5px;
-        opacity: 1;
-        animation: pisca .7s infinite;
-
-      }
-      .fs-1{
-        font-size: 80px !important;
-      }
-
-      
-      .card{
-        opacity: 1;        
-      }
-
-
-      @keyframes pisca {
-        0%,100%{
-          opacity: 1;
-        }
-        50%{
-          opacity: 0;
-        }
-      }
-
-
-      @keyframes nascer {
-        0%{opacity: 0}
-        
-        50%{opacity: 0.5}
-
-        100%{opacity: 1}
-      }
-
-    </style>
+    <link rel="stylesheet" href="style/style.css">
   
   </head>
   <body>
@@ -130,40 +93,38 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Preços</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Artigos</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Sobre</a></li>
+        <li><a href="#features" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#artigos" class="nav-link px-2 link-dark">Artigos</a></li>
+        <li><a href="#precos" class="nav-link px-2 link-dark">Preços</a></li>
+        <li><a href="#sobre" class="nav-link px-2 link-dark">Sobre</a></li>
+        <li><a href="#contato" class="nav-link px-2 link-dark">Contato</a></li>
       </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Entre</button>
-        <button type="button" class="btn btn-primary">Cadastre-se</button>
-      </div>
     </header>
   </div>
 <main>
+
   <div class="row gx-0">
     <div class="d-flex justify-content-center align-items-center p-5" style="height: 500px;">
       <h1 class="text-center fs-md-3 fs-1 font-monospace" id="title-main" >Marketing + High Technology =  Sale. </h1>
     </div>
   </div>
 
-  <div class="container mt-5">
+<!--Feature-->
+  <div class="container mt-5" id="features">
     
       <div class="text-title text-center row">
         <h3 class="">Conheça e escolha as ferramentas que irão alavancar o seu negócio</h3>
       </div>
 
-      <nav class="nav-features row p-3 mt-3" >
-        <ul class="nav justify-content-center">
+      <nav class="nav-features row p-3 mt-3 justify-content-center" >
+        <ul class="nav justify-content-center nav-b">
           <li class="nav-item">
             <a class="nav-link text-decoration-none" aria-current="page" onclick="clickNavCard('seo-int-card')">
               <img height="32" width="32" src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-magnet-high-school-flatart-icons-lineal-color-flatarticons.png"/> SEO Inteligente
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-decoration-none" onclick="clickNavCard('publi-auto-card')">
+            <a class="nav-link text-decoration-none" onclick="clickNavCard('publi-auto-card')" >
               <img height="32" width="32" src="https://img.icons8.com/dotty/80/000000/commercial.png"/> Publicidade Automatizada
             </a>
           </li>
@@ -180,7 +141,7 @@
         </ul>
       </nav>
 
-      <div class="card border border-0" id="seo-int-card" style="display: block;">
+      <div class="card border border-0 " id="seo-int-card" style="display: block;">
         <div class="card-body pt-5 pl-5">
           <div class="row">
             <div class="col-md-8 col-12 txt-card">
@@ -257,22 +218,84 @@
       </div>
       
 
-
-
   </div>
+  <div class="container px-4 py-5" id="icon-grid">
+  <h4 class="pb-2 border-bottom display-6">E mais...</h4>
 
-
-<div class="container" >
-  <div class="row" style="height:500px;">
-    <div class="col-md-8 col-12 d-flex align-items-center" >
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
       <div>
-        <h1>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, maxime voluptatibus. Dignissimos 
-          amet fugit asperiores nam quod sit quas ipsam officia exercitationem neque praesentium 
-          animi deserunt dolorum ipsum, eaque voluptatibus?</p>        
+        <h3 class="fw-bold mb-0 fs-4">Equipe de design</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
       </div>
     </div>
-    <div class="col-md-4 col-12 d-flex align-items-center justify-content-center" >
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Software dinâmico</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Calendário de publicidades </h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Trabalhe em casa</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Medidor de visualizações</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Sistema configurável</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Notificações personalizadas</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4">Suporte 24 hrs</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--News-->
+  <div class="container" >
+  <div class="row mt-5 mb-5">
+    <div class="col-md-7 col-12 d-flex align-items-start" >
+      <div>
+        <h1>Tenha acesso à noticias <b class="text-hot">quentes</b> do mercado de Marketing Digital.</h1>
+        <p class="text-start fs-5 mt-3">Em nossa comunidade privada, mapeamos e disponibilizamos a todos os nossos clientes
+          as noticias mais quentes do mercado. Como informação é tudo, acreditamos que quanto 
+          mais informação disponibilizamos para os nossos clientes, mais preparados e antenados 
+          eles estaram para a concorrência do mercado.  
+        </p>        
+      </div>
+    </div>
+    <div class="col-md-5 col-12 d-flex align-items-start justify-content-center" >
     
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -298,244 +321,160 @@
 
     </div>
   </div>
-</div>
-
-<!--Feature-->
-<div class="container px-4 py-5" id="icon-grid">
-  <h2 class="pb-2 border-bottom">Icon grid</h2>
-
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
   </div>
-</div>
 
-<div class="container px-4 py-5">
-  <h2 class="pb-2 border-bottom">Features with title</h2>
+  <!--Artigos-->
+  <div class="container">
 
-  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-    <div class="d-flex flex-column align-items-start gap-2">
-      <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-      <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-    </div>
-    <div class="row row-cols-1 row-cols-sm-2 g-4">
-      <div class="d-flex flex-column gap-2">
-        <div
-          class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#collection" />
-          </svg>
+    
+
+  </div>
+
+
+  <!--Pricing-->
+  <div class="container" id="precos">
+
+  <div class="header-section text-center p-5">
+      <h1>Preços e Planos</h1>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Begginer</h4>
         </div>
-        <h4 class="fw-semibold mb-0">Featured title</h4>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-
-      <div class="d-flex flex-column gap-2">
-        <div
-          class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#gear-fill" />
-          </svg>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">R$ 49,90<small class="text-muted fw-light">/mês</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li> Acesso ao sistema de Gestão de MKT</li>
+            <li> 1 Relatórios por mês</li>
+            <li> 3 Atualizações diárias</li>
+            <li> Suporte por e-mail</li>
+            <li> 2 usuários por plano</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg botao-preco">Saiba Mais</button>
         </div>
-        <h4 class="fw-semibold mb-0">Featured title</h4>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
       </div>
-
-      <div class="d-flex flex-column gap-2">
-        <div
-          class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#speedometer" />
-          </svg>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Amador</h4>
         </div>
-        <h4 class="fw-semibold mb-0">Featured title</h4>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-
-      <div class="d-flex flex-column gap-2">
-        <div
-          class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#table" />
-          </svg>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">R$ 99,90<small class="text-muted fw-light">/mês</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li> Acesso ao sistema de Gestão de MKT</li>
+            <li> 2 Relatórios por mês</li>
+            <li> Atualizações diárias ilimitadas</li>
+            <li> Suporte 24 horas (telefone + e-mail) </li>
+            <li> 5 usuários por plano</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg botao-preco">Saiba Mais</button>
         </div>
-        <h4 class="fw-semibold mb-0">Featured title</h4>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm card-pro">
+        <div class="card-header py-3  card-pro-header">
+          <h4 class="my-0 fw-normal"><b>Pro</b></h4>
+        </div>
+        <div class="card-body border border-0">
+          <h1 class="card-title pricing-card-title">R$ 199,90<small class="text-muted fw-light">/mês</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li> Acesso ao sistema de Gestão de MKT</li>
+            <li> 4 Relatórios por mês</li>
+            <li> Atualizações diárias ilimitadas</li>
+            <li> Usuários por plano ilimitados</li>
+            <li> Suporte 24 horas (telefone + e-mail) </li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg botao-preco">Saiba Mais</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!--Pricing-->
-
-<div class="container">
-
-<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Free</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">R$50<small class="text-muted fw-light">/mês</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>10 users included</li>
-          <li>2 GB of storage</li>
-          <li>Email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Saiba Mais</button>
-      </div>
-    </div>
   </div>
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Amador</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">R$100<small class="text-muted fw-light">/mês</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>20 users included</li>
-          <li>10 GB of storage</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-      </div>
-    </div>
+  <div class="container">
+  <h1 class="display-6 text-center mt-4 mb-5">Compare os planos</h1>
+
+  <div class="table-responsive">
+    <table class="table text-center">
+      <thead>
+        <tr>
+          <th style="width: 34%;"></th>
+          <th style="width: 22%;">Beginner</th>
+          <th style="width: 22%;">Amador</th>
+          <th style="width: 22%;">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-start">SEO Inteligente</th>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Publicidade Automatizada</th>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Dashboard Informativo</th>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Suporte por e-mail</th>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Design Mecânico</th>
+          <td></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Rekatórios por mês</th>
+          <td><b>1</b></td>
+          <td><b>2</b></td>
+          <td><b>4</b></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Atualizações diárias ilimitadas</th>
+          <td></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Usuários por plano ilimitados</th>
+          <td></td>
+          <td></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-start">Suporte 24 horas (telefone + e-mail)</th>
+          <td></td>
+          <td></td>
+          <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-      <div class="card-header py-3 text-bg-primary border-primary">
-        <h4 class="my-0 fw-normal">Pro</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/mês</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>30 users included</li>
-          <li>15 GB of storage</li>
-          <li>Phone and email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-      </div>
-    </div>
   </div>
-</div>
 
-<h2 class="display-6 text-center mb-4">Compare plans</h2>
 
-<div class="table-responsive">
-  <table class="table text-center">
-    <thead>
-      <tr>
-        <th style="width: 34%;"></th>
-        <th style="width: 22%;">Free</th>
-        <th style="width: 22%;">Pro</th>
-        <th style="width: 22%;">Enterprise</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row" class="text-start">Public</th>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Private</th>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-    </tbody>
-
-    <tbody>
-      <tr>
-        <th scope="row" class="text-start">Permissions</th>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Sharing</th>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Unlimited members</th>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Extra security</th>
-        <td></td>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
 
 </main>
+
+
+
+
 
 <!--Footer-->
   <div class="container">
@@ -555,48 +494,7 @@
     </footer>
   </div>
 
-
-    
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  
-    <script>
-
-      function typeWrite(elemento){
-        const textoArray = elemento.textContent.split("");
-        elemento.textContent = "";
-
-          textoArray.forEach((letra,i) =>{
-
-            setTimeout(()=>elemento.textContent += letra,100*i)
-
-          })
-
-      }
-      const titulo = document.querySelector("#title-main");
-      typeWrite(titulo)
-
-
-      function clickNavCard(e){
-        
-        displayNoneSection();
-        var card = document.getElementById(e);
-        card.style.display = "block";
-        card.style.animation = "nascer .8s linear";
-
-      } 
-
-      function displayNoneSection(){
-      
-      document.querySelector("#seo-int-card").style.display = "none";
-      document.querySelector("#publi-auto-card").style.display = "none";
-      document.querySelector("#dash-info-card").style.display = "none";
-      document.querySelector("#design-mec-card").style.display = "none";
-      }
-
-
-
-    </script>
-  
-  </body>
+<script src="js/script.js"></script>
+</body>
 </html>
