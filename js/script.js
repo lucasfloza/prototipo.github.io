@@ -1,3 +1,4 @@
+//Letreiro
 function typeWrite(elemento){
     const textoArray = elemento.textContent.split("");
     elemento.textContent = "";
@@ -13,6 +14,7 @@ function typeWrite(elemento){
   typeWrite(titulo)
 
 
+  //Animação das Features
   function clickNavCard(e){
     
     displayNoneSection();
@@ -29,3 +31,21 @@ function typeWrite(elemento){
    document.querySelector("#dash-info-card").style.display = "none";
    document.querySelector("#design-mec-card").style.display = "none";
   }
+
+
+//validação bootstrap
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
