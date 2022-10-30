@@ -78,44 +78,63 @@
     font-weight:550;
     color: black;
   }
+  #contato #smile{
+    margin-left: 10px;
+    display: inline-block;
+    animation: smileRotate 4s infinite;
+  }
 
+  .form-control{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+  }
 
   label{
     background-color: white;
-    padding: 0 5px;
+    border-radius: 5%;
+    padding: 0 2px;
     color: rgb(77, 74, 74);
-    transform: translate(7px,30px);
-  
+    font-weight: bold;
+    transform: translate(7px,-31.5px);
     transition: transform .25s ease-in-out;
     transform-origin: 0 100%;
-
-  }
-    .form-div input[type="text"]:nth-child(1){
-    padding-left: 60px;
- }
-     .form-div input[type="text"]:nth-child(2){
-    padding-left: 90px;
- }
-     .form-div input[type="email"]{
-    padding-left: 70px;
- }
-
-  .form-div:hover  label{
-    transform: translate(7px,12px) scale(.9);
   }
 
-  .form-div:hover input{
-    padding-left: 8px !important;
+  form textarea + label{
+    transform: translate(10px,-193.5px);
+  }
+
+  form .inputs:focus{
+    padding-left: 10px !important;
     transition: .35s ease-in-out;
-  }
+  } 
+  form textarea:focus{
+    padding-left: 10px !important;
+    transition: .35s ease-in-out;
+  } 
 
-  #contato #smile{
-    margin-left: 10px;
-   display: inline-block;
+  form .inputs:focus + label{
+    transform: translate(10px,-53px)scale(.8);
     
-    animation: smileRotate 4s infinite;
-
   }
+  form textarea:focus + label{
+    transform: translate(10px,-210px);
+  }
+
+    #nome-input{
+    padding-left: 65px;
+ }
+    #assunto-input{
+    padding-left: 78px;
+ }
+    #email-input{
+    padding-left: 59px;
+  }
+    #textarea-recado{
+    padding-left: 74px;
+    }
+
 
 
   @keyframes smileRotate{
